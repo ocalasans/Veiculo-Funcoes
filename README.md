@@ -187,8 +187,8 @@ Veiculo_World(1, NON_GLOBAL_VEHICLES, -1, "Mensagem!", playerid, vehicleid);
 
 ### Informações de contato
 
-Instagram: ocalasans   
-YouTube: Walkerxinho   
+Instagram: [ocalasans](https://instagram.com/ocalasans)   
+YouTube: [Walkerxinho](https://www.youtube.com/@walkerxinho)   
 Discord: walkerxinho7 ou Walkerxinho7#9124
 
 ***Chave pix para doações:***
