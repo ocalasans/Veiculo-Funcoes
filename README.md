@@ -6,8 +6,7 @@ Este é um include que possui diversas funções para veículos, tudo de forma f
 
 ### Como instalar?
 
-Você deve fazer o dowloand do include, depois de ter feito, você deverá colocar o include na pasta (pawno > include).
-Após ter feito isso abra o arquivo pwn do seu Gamemode e coloque o seguinte código abaixo do seus outros includes:
+Você deve fazer o download do include. Depois de tê-lo feito, você deverá colocar o include na pasta (pawno > include). Após ter feito isso, abra o arquivo pwn do seu Gamemode e coloque o seguinte código abaixo dos seus outros includes:
 ```pawn
 #include <VeiculoFuncoes>
 ```
@@ -31,7 +30,7 @@ inc streamer [download](https://github.com/samp-incognito/samp-streamer-plugin).
 
 ### Qual é a diferença?
 
-Eu irei fazer 2 comandos para vocês verem a diferença, usando o normal ou usando o meu include.
+Irei criar dois comandos para que você possa observar a diferença, utilizando o método normal e também utilizando o meu include.
 
 Comando sem a include.
 ```pawn
@@ -59,7 +58,7 @@ CMD:motor(playerid, params[])
 
 ### Como funciona?
 
-Eu irei explicar primeiro como funciona uma determinada callback da minha include com um determinado veiculo, ou seja, o veiculo de um player. Irei explicar utilizando a callback **Veiculo_Fechadura**.
+Irei explicar primeiro como funciona uma determinada callback da minha include com um veículo específico, ou seja, o veículo de um jogador. Vou explicar utilizando a callback **Veiculo_Fechadura**.
 ```pawn
 Veiculo_Fechadura(true, NON_GLOBAL_VEHICLES, -1, "Você trancou o veiculo.", playerid, vehicleid);
 ```
@@ -70,7 +69,7 @@ Veiculo_Fechadura(true, NON_GLOBAL_VEHICLES, -1, "Você trancou o veiculo.", pla
 5 - <kbd>Defina o playerid.</kbd>   
 6 - <kbd>Defina o vehicleid.</kbd>
 
-Bom, acima foi explicado a usar a callback com um determinado veiculo, não global, ou seja, o veiculo de um player. Agora vou explicar a vocês, como vocês devem usar a callback global.
+Bem, acima foi explicado como usar a callback com um veículo específico, não global, ou seja, o veículo de um jogador. Agora vou explicar como vocês devem usar a callback global.
 ```pawn
 Veiculo_Fechadura(true, GLOBAL_VEHICLES, -1, "Todos os veículos foram trancados.");
 ```
@@ -85,7 +84,7 @@ Leia a categoria **Relacionado ao Global** para entender.
 
 ### Como funciona as callbacks com estruturas diferentes?
 
-Aqui nessa parte irei explicar como algumas callbacks que são diferentes das outras funcionam. Tem algumas callbacks que utilizam a mesma estrutura então a explicação servirá para as duas.
+Nesta parte, vou explicar como algumas callbacks que diferem das outras funcionam. Existem algumas callbacks que usam o mesmo estilo de estrutura, então a explicação servirá para ambas.
 ```pawn
 Veiculo_Portas(↓)
 Veiculo_Janelas(true, 5, NON_GLOBAL_VEHICLES, -1, "Você abriu todas as janelas", playerid, vehicleid);
@@ -130,7 +129,8 @@ Veiculo_World(2, NON_GLOBAL_VEHICLES, -1, "Você e seu veículo foram para o mun
 ```pawn
 Veiculo_Sirene(true, NON_GLOBAL_VEHICLES, -1, "Você adicionou uma sirene no seu veículo", playerid, vehicleid);
 ```
-A callback **Veiculo_Sirene** nem deveria estar aqui pois ela não tem uma estrutura diferente das outras, mas vou adicioná-la aqui para mencionar que não são todos os veículos que irão pegar a sirene, em versões futuras planejo trazer atualizações para essa callback.
+
+A callback **Veiculo_Sirene** nem deveria estar aqui, pois ela não possui uma estrutura diferente das outras. No entanto, vou adicioná-la para mencionar que nem todos os veículos irão acionar a sirene. Em versões futuras, planejo trazer atualizações para esta callback.
 
 1 - <kbd>Defina se é true ou false, true coloca a sirene e false retira.</kbd>   
 2 - <kbd>Defina se é global ou se não é global, nesse caso não é global.</kbd>   
@@ -144,9 +144,11 @@ null - **Veículos compatíveis > Patriot, Sultan, Cheetah, BF-400, Predator, Ra
 
 ### Relacionado ao Global
 
-Aqui eu irei explicar como funciona as callbacks em modo Global, bom é simples, quando a callback não é global, não é necessário que você use o <kbd>playerid</kbd> e nem o <kbd>vehicleid</kbd>, mesmo que você use, tudo dependerá das seguintes definições <kbd>NON_GLOBAL_VEHICLES</kbd> ou <kbd>GLOBAL_VEHICLES</kbd>, a primeira definição citada quer dizer que a callback não será global, ou seja, o veiculo de um player, mas a segunda definição citada quer dizer que a callback vai ser global. Se você usar o global na maioria das callbacks, e o player estiver dentro do veículo, nenhuma mudança irá acontecer com veiculo dele, por exemplo o **Veiculo_Respawn** se você usar essa callback global, caso tenha algum player utilizando um veículo, esse determinado veículo não será respawnado.
+Aqui está o texto corrigido:
 
-Este include é muito recomendado para servidores de DayZ, pois tem definições global.
+Aqui, vou explicar como funcionam as callbacks em modo global. É simples: quando a callback não é global, não é necessário que você use <kbd>playerid</kbd> e nem <kbd>vehicleid</kbd>. Mesmo que você os utilize, tudo dependerá das seguintes definições: <kbd>NON_GLOBAL_VEHICLES</kbd> ou <kbd>GLOBAL_VEHICLES</kbd>. A primeira definição citada indica que a callback não será global, ou seja, será referente ao veículo de um jogador. Já a segunda definição citada indica que a callback será global. Se você usar o modo global na maioria das callbacks, e o jogador estiver dentro do veículo, nenhuma mudança ocorrerá no veículo dele. Por exemplo, o **Veiculo_Respawn**. Se você usar essa callback de forma global, e algum jogador estiver utilizando um veículo, esse veículo específico não será respawnado.
+
+Este include é altamente recomendado para servidores de DayZ, pois possui definições globais.
 
 -----------------------
 
