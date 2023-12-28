@@ -100,7 +100,7 @@ Vehicle_Windows(true, 5, NON_GLOBAL_VEHICLES, -1, "You opened all the windows.",
 ```pawn
 Vehicle_Life(1000, NON_GLOBAL_VEHICLES, -1, "You updated the vehicle's health to 1000.", playerid, vehicleid);
 ```
-1 - <kbd>Defina a vida do veiculo.</kbd>   
+1 - <kbd>Define the vehicle's lifespan.</kbd>   
 2 - <kbd>Specify whether it is global or if it is not global; in this case, it is not global.</kbd>    
 3 - <kbd>Set the message color.</kbd>   
 4 - <kbd>Define the message that will appear for the player.</kbd>   
