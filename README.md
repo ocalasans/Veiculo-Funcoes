@@ -2,6 +2,8 @@
 
 Este é um include que possui diversas funções para veículos, tudo de forma fácil de usar. Recomendo que leia as categorias abaixo para ficar informado.
 
+English > [README.md](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/README.eng.md).
+
 -----------------------
 
 ### Como instalar?
@@ -15,7 +17,7 @@ Você deve fazer o download do include. Depois de tê-lo feito, você deverá co
 
 ### Includes necessárias
 
-```pawn
+```pawn 
 #include <a_samp>
 #include <foreach>
 #include <streamer>
@@ -41,7 +43,7 @@ CMD:motor(playerid, params[])
     GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
     SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective);
     SendClientMessage(playerid, -1, "Voce ligou o motor do seu veículo.");
-    return 1;
+    return true;
 }
 ```
 Comando com a include.
@@ -50,7 +52,7 @@ CMD:motor(playerid, params[])
 {
     new vehicleid = GetPlayerVehicleID(playerid);
     Veiculo_Motor(true, NON_GLOBAL_VEHICLES, -1, "Você ligou o motor do seu veículo.", playerid, vehicleid);
-    return 1;
+    return true;
 }
 ```
 
@@ -87,7 +89,7 @@ Leia a categoria **Relacionado ao Global** para entender.
 Nesta parte, vou explicar como algumas callbacks que diferem das outras funcionam. Existem algumas callbacks que usam o mesmo estilo de estrutura, então a explicação servirá para ambas.
 ```pawn
 Veiculo_Portas(↓)
-Veiculo_Janelas(true, 5, NON_GLOBAL_VEHICLES, -1, "Você abriu todas as janelas", playerid, vehicleid);
+Veiculo_Janelas(true, 5, NON_GLOBAL_VEHICLES, -1, "Você abriu todas as janelas.", playerid, vehicleid);
 ```
 1 - <kbd>Defina se é true ou false, true abre false fecha.</kbd>   
 2 - <kbd>Defina qual janela irá abrir, vai de 1 até 4, 5 todas abrem.</kbd>   
@@ -98,7 +100,7 @@ Veiculo_Janelas(true, 5, NON_GLOBAL_VEHICLES, -1, "Você abriu todas as janelas"
 7 - <kbd>Defina o vehicleid.</kbd>
 
 ```pawn
-Veiculo_Vida(1000, NON_GLOBAL_VEHICLES, -1, "Você atualizou a vida do veículo para 1000", playerid, vehicleid);
+Veiculo_Vida(1000, NON_GLOBAL_VEHICLES, -1, "Você atualizou a vida do veículo para 1000.", playerid, vehicleid);
 ```
 1 - <kbd>Defina a vida do veiculo.</kbd>   
 2 - <kbd>Defina se é global ou se não é global, nesse caso não é global.</kbd>    
@@ -109,7 +111,7 @@ Veiculo_Vida(1000, NON_GLOBAL_VEHICLES, -1, "Você atualizou a vida do veículo 
 
 ```pawn
 Veiculo_Reparar(↓)
-Veiculo_Respawn(NON_GLOBAL_VEHICLES, -1, "Você deu respawn em seu veiculo", playerid, vehicleid);
+Veiculo_Reaparecer(NON_GLOBAL_VEHICLES, -1, "Você deu respawn em seu veiculo.", playerid, vehicleid);
 ```
 1 - <kbd>Defina se é global ou se não é global, nesse caso não é global.</kbd>    
 2 - <kbd>Defina a cor da mensagem.</kbd>   
@@ -118,7 +120,7 @@ Veiculo_Respawn(NON_GLOBAL_VEHICLES, -1, "Você deu respawn em seu veiculo", pla
 5 - <kbd>Defina o vehicleid.</kbd>
 
 ```pawn
-Veiculo_World(2, NON_GLOBAL_VEHICLES, -1, "Você e seu veículo foram para o mundo 2", playerid, vehicleid);
+Veiculo_Mundo(2, NON_GLOBAL_VEHICLES, -1, "Você e seu veículo foram para o mundo 2.", playerid, vehicleid);
 ```
 1 - <kbd>Defina o mundo para qual o veículo irá.</kbd>   
 2 - <kbd>Defina se é global ou se não é global, nesse caso não é global.</kbd>    
@@ -127,7 +129,7 @@ Veiculo_World(2, NON_GLOBAL_VEHICLES, -1, "Você e seu veículo foram para o mun
 5 - <kbd>Defina o playerid.</kbd>   
 6 - <kbd>Defina o vehicleid.</kbd>
 ```pawn
-Veiculo_Sirene(true, NON_GLOBAL_VEHICLES, -1, "Você adicionou uma sirene no seu veículo", playerid, vehicleid);
+Veiculo_Sirene(true, NON_GLOBAL_VEHICLES, -1, "Você adicionou uma sirene no seu veículo.", playerid, vehicleid);
 ```
 
 A callback **Veiculo_Sirene** nem deveria estar aqui, pois ela não possui uma estrutura diferente das outras. No entanto, vou adicioná-la para mencionar que nem todos os veículos irão acionar a sirene. Em versões futuras, planejo trazer atualizações para esta callback.
@@ -144,11 +146,9 @@ null - **Veículos compatíveis > Patriot, Sultan, Cheetah, BF-400, Predator, Ra
 
 ### Relacionado ao Global
 
-Aqui está o texto corrigido:
+Aqui, vou explicar como funcionam as callbacks em modo global. É simples: quando a callback não é global, não é necessário que você use <kbd>playerid</kbd> e nem <kbd>vehicleid</kbd>. Mesmo que você os utilize, tudo dependerá das seguintes definições: <kbd>NON_GLOBAL_VEHICLES</kbd> ou <kbd>GLOBAL_VEHICLES</kbd>. A primeira definição citada indica que a callback não será global, ou seja, será referente ao veículo de um jogador. Já a segunda definição citada indica que a callback será global. Se você usar o modo global na maioria das callbacks, e o jogador estiver dentro do veículo, nenhuma mudança ocorrerá no veículo dele. Por exemplo, o **Veiculo_Reaparecer**. Se você usar essa callback de forma global, e algum jogador estiver utilizando um veículo, esse veículo específico não será respawnado.
 
-Aqui, vou explicar como funcionam as callbacks em modo global. É simples: quando a callback não é global, não é necessário que você use <kbd>playerid</kbd> e nem <kbd>vehicleid</kbd>. Mesmo que você os utilize, tudo dependerá das seguintes definições: <kbd>NON_GLOBAL_VEHICLES</kbd> ou <kbd>GLOBAL_VEHICLES</kbd>. A primeira definição citada indica que a callback não será global, ou seja, será referente ao veículo de um jogador. Já a segunda definição citada indica que a callback será global. Se você usar o modo global na maioria das callbacks, e o jogador estiver dentro do veículo, nenhuma mudança ocorrerá no veículo dele. Por exemplo, o **Veiculo_Respawn**. Se você usar essa callback de forma global, e algum jogador estiver utilizando um veículo, esse veículo específico não será respawnado.
-
-Este include é altamente recomendado para servidores de DayZ, pois possui definições globais.
+Este include é altamente recomendado para servidores de SA:MP DayZ, pois possui definições globais.
 
 -----------------------
 
@@ -180,9 +180,9 @@ Veiculo_Vida(1000, NON_GLOBAL_VEHICLES, -1, "Mensagem!", playerid, vehicleid);
 
 Veiculo_Reparar(NON_GLOBAL_VEHICLES, -1, "Mensagem!", playerid, vehicleid);
 
-Veiculo_Respawn(NON_GLOBAL_VEHICLES, -1, "Mensagem!", playerid, vehicleid);
+Veiculo_Reaparecer(NON_GLOBAL_VEHICLES, -1, "Mensagem!", playerid, vehicleid);
 
-Veiculo_World(1, NON_GLOBAL_VEHICLES, -1, "Mensagem!", playerid, vehicleid);
+Veiculo_Mundo(1, NON_GLOBAL_VEHICLES, -1, "Mensagem!", playerid, vehicleid);
 ```
 
 -----------------------
@@ -191,9 +191,5 @@ Veiculo_World(1, NON_GLOBAL_VEHICLES, -1, "Mensagem!", playerid, vehicleid);
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
 YouTube: [Walkerxinho](https://www.youtube.com/@walkerxinho)   
-Discord: walkerxinho7 ou Walkerxinho7#9124
-
-***Chave pix para doações:***
-
-Chave: 6ec94946-dfa5-4300-82b6-8307f9fefd38   
-Irei por a chave aleatória por questões de privacidade.
+Discord: walkerxinho7 ou Walkerxinho7#9124   
+Comunidade: [SA:MP Programming Community©](https://abre.ai/samp-spc)
