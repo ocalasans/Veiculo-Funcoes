@@ -65,7 +65,7 @@ Vehicle_Lock(true, NON_GLOBAL_VEHICLES, -1, "You locked the vehicle.", playerid,
 1 - <kbd>Set it to true or false, true locks, and false unlocks.</kbd>   
 2 - <kbd>Specify whether it is global or if it is not global; in this case, it is not global.</kbd>   
 3 - <kbd>Set the color of the message.</kbd>   
-4 - <kbd>Set the message that will appear for the player..</kbd>   
+4 - <kbd>Set the message that will appear for the player.</kbd>   
 5 - <kbd>Set the playerid.</kbd>   
 6 - <kbd>Set the vehicleid.</kbd>
 
