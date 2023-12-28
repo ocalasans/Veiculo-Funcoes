@@ -22,7 +22,7 @@ You should download the include. After doing so, you need to place the include i
 ```
 Don't have the mentioned includes? Download them here.
 
-inc a_samp <kbd>nativo</kbd>   
+inc a_samp <kbd>native</kbd>   
 inc foreach [download](https://github.com/karimcambridge/samp-foreach).   
 inc streamer [download](https://github.com/samp-incognito/samp-streamer-plugin).
 
