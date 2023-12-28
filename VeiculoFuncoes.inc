@@ -742,6 +742,7 @@ stock Veiculo_Sirene(bool:INC_sirene, INC_global, INC_color, const INC_message[]
                 {
                     if(INC_sirenactivated_global[v])
                         DestroyDynamicObject(INC_siren_global[v]);
+
                     INC_siren_global[v] = CreateDynamicObject(19288, x_v, y_v, z_v, 0, 0, 0, 0);
                     AttachDynamicObjectToVehicle(INC_siren_global[v], v, 0.0, 0, 1.11, 0, 0, 0);
                 }
@@ -749,6 +750,7 @@ stock Veiculo_Sirene(bool:INC_sirene, INC_global, INC_color, const INC_message[]
                 {
                     if(INC_sirenactivated_global[v])
                         DestroyDynamicObject(INC_siren_global[v]);
+
                     INC_siren_global[v] = CreateDynamicObject(18646, x_v, y_v, z_v, 0, 0, 0, 0);
                     AttachDynamicObjectToVehicle(INC_siren_global[v], v, 0.0, 0, 0.68, 0, 0, 0);
                 }
@@ -756,6 +758,7 @@ stock Veiculo_Sirene(bool:INC_sirene, INC_global, INC_color, const INC_message[]
                 {
                     if(INC_sirenactivated_global[v])
                         DestroyDynamicObject(INC_siren_global[v]);
+
                     INC_siren_global[v] = CreateDynamicObject(19288, x_v, y_v, z_v, 0, 0, 0, 0);
                     AttachDynamicObjectToVehicle(INC_siren_global[v], v, 0.0, 0, 0.62, 0, 0, 0);
                 }
@@ -763,6 +766,7 @@ stock Veiculo_Sirene(bool:INC_sirene, INC_global, INC_color, const INC_message[]
                 {
                     if(INC_sirenactivated_global[v])
                         DestroyDynamicObject(INC_siren_global[v]);
+
                     INC_siren_global[v] = CreateDynamicObject(18646, x_v, y_v, z_v, 0, 0, 0, 0);
                     AttachDynamicObjectToVehicle(INC_siren_global[v], v, 0.0, 0, 0.65, 0, 0, 0);
                 }
