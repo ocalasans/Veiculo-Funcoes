@@ -701,7 +701,7 @@ stock Veiculo_Mundo(INC_world, INC_global, INC_color, const INC_message[], playe
                 if(patriot == 470)
                 {
                     if(INC_sirenactivated_global[v])
-                        DestroyDynamicObject(INC_siren_global[v]);
+                        //DestroyDynamicObject(INC_siren_global[v]);
                         
                     INC_siren_global[v] = CreateDynamicObject(19288, x_v, y_v, z_v, 0, 0, 0, 0);
                     AttachDynamicObjectToVehicle(INC_siren_global[v], v, 0.0, 0, 1.10, 0, 0, 0);
