@@ -575,7 +575,7 @@ stock Veiculo_Mundo(INC_world, INC_global, INC_color, const INC_message[], playe
 }
 
 //Setar sirene objeto veiculo.
-stock Veiculo_Sirene(bool:INC_sirene, INC_global, INC_color, const INC_message[], playerid = -1, vehicleid = -1)
+/*stock Veiculo_Sirene(bool:INC_sirene, INC_global, INC_color, const INC_message[], playerid = -1, vehicleid = -1)
 {
     new Float:x_v, ,Float:y_x, Float:z_v;
     GetPlayerPos(playerid, x_v, y_x, z_v);
@@ -788,7 +788,7 @@ stock Veiculo_Sirene(bool:INC_sirene, INC_global, INC_color, const INC_message[]
             INC_SCM_ALL(INC_color, INC_str_message);
     }
     return true;
-}
+}*/
 
 //English
 
