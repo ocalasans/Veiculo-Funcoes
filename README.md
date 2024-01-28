@@ -217,13 +217,13 @@ Este include é altamente recomendado para servidores de SA:MP DayZ, pois possui
 
 ### Como você deve usá-lo sem um parâmetro playerid
 
-Quando a callback não possui o `playerid` e não tem nenhuma relação com os players, vocês passaram a definir apenas o `vehicleid`, como exemplificado abaixo:
+Quando a callback não possui o `playerid` e não tem nenhuma relação com os players, vocês irão passar a definir apenas o `vehicleid`, como exemplificado abaixo:
 ```pawn
 Veiculo_Neon(true, NEON_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "", vehicleid);
 ```
 * A definição de `cor` e `mensagem` parece desnecessária, uma vez que `Veiculo_Neon` está sendo utilizada em uma callback que não possui relação alguma com o `playerid` nem com o global. No entanto, essa situação é inevitável, e é uma consequência que teremos que aceitar.
 
-Por outro lado, se a callback não possuir o `playerid`, mas tem relação com os players, vocês passaram a definir da seguinte forma:
+Por outro lado, se a callback não possuir o `playerid`, mas tem relação com os players, vocês irão passar a definir da seguinte forma:
 ```pawn
 Veiculo_Neon(true, NEON_0, GLOBAL_VEHICLES, 0xFFFFFFFF, "Mensagem.");
 ```
