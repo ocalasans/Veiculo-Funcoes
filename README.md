@@ -142,7 +142,7 @@ Veiculo_Neon(true, NEON_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "Você adicionou Neo
 > [!Warning]
 > Ao definir `false` à primeira definição, estabeleça a segunda definição como `NEON_NULO`.
 
-Você poderá encontrar todas as definições para `Neon` acessando esta aba > [other definitions](https://github.com/Walkerxinho7/testes/blob/main/others/other_definitions.md).
+Você poderá encontrar todas as definições para `Neon` acessando esta aba > [other definitions](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/other_definitions.md).
 
 -----------------------
 
@@ -160,7 +160,7 @@ Veiculo_Xenon(true, XENON_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "Você adicionou X
 > [!Warning]
 > Ao definir `false` à primeira definição, estabeleça a segunda definição como `XENON_NULO`.
 
-Você poderá encontrar todas as definições para `Xenon` acessando esta aba > [other definitions](https://github.com/Walkerxinho7/testes/blob/main/others/other_definitions.md).
+Você poderá encontrar todas as definições para `Xenon` acessando esta aba > [other definitions](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/other_definitions.md).
 
 -----------------------
 
