@@ -176,7 +176,7 @@ Vehicle_Tune(true, SPOILER_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "You added a Spoi
 > [!Warning]
 > When setting `false` to the first definition, you are specifying that the component to be removed is the one defined by the second definition.
 
-"You can find all the definitions for `Components` by accessing this tab." > [components](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/components.eng.md).
+You can find all the definitions for `Components` by accessing this tab > [components](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/components.eng.md).
 
 -----------------------
 
