@@ -26,7 +26,7 @@ CMD:engine(playerid)
     GetVehicleParamsEx(vehicleid, engine, lights, alarm, doors, bonnet, boot, objective);
     SetVehicleParamsEx(vehicleid, VEHICLE_PARAMS_ON, lights, alarm, doors, bonnet, boot, objective);
     SendClientMessage(playerid, -1, "You turned on the engine of your vehicle.");
-    return 1;
+    return true;
 }
 ```
 
@@ -36,7 +36,7 @@ CMD:engine(playerid)
 {
     new vehicleid = GetPlayerVehicleID(playerid);
     Veiculo_Engine(true, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "You turned on the engine of your vehicle.", vehicleid, playerid);
-    return 1;
+    return true;
 }
 ```
 
