@@ -209,7 +209,7 @@ Veiculo_Interior(1, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "O seu veículo foi para o 
 
 ### Relacionado ao Global
 
-Quando a callback não é global, não é necessário que você use <kbd>vehicleid</kbd> e nem <kbd>playerid</kbd>. Mesmo que você os utilize, tudo dependerá das seguintes definições: <kbd>NON_GLOBAL_VEHICLES</kbd> ou <kbd>GLOBAL_VEHICLES</kbd>. A primeira definição citada indica que a callback não será global, ou seja, será referente ao veículo de um jogador. Já a segunda definição citada indica que a callback será global. Se você usar o modo global na maioria das callbacks, e o jogador estiver dentro do veículo, nenhuma mudança ocorrerá no veículo dele. Por exemplo, o `Veiculo_Reaparecer`. Se você usar essa callback de forma global, e algum jogador estiver utilizando um veículo, esse veículo específico não será respawnado.
+Quando a callback não é global, não é necessário que você use `vehicleid` e nem `playerid`. Mesmo que você os utilize, tudo dependerá das seguintes definições: `NON_GLOBAL_VEHICLES` ou `GLOBAL_VEHICLES`. A primeira definição citada indica que a callback não será global, ou seja, será referente ao veículo de um jogador. Já a segunda definição citada indica que a callback será global. Se você usar o modo global na maioria das callbacks, e o jogador estiver dentro do veículo, nenhuma mudança ocorrerá no veículo dele. Por exemplo, o `Veiculo_Reaparecer`. Se você usar essa callback de forma global, e algum jogador estiver utilizando um veículo, esse veículo específico não será respawnado.
 
 Este include é altamente recomendado para servidores de SA:MP DayZ, pois possui definições globais.
 
