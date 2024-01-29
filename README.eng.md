@@ -137,7 +137,7 @@ Vehicle_Neon(true, NEON_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "You added Neon to y
 6 - <kbd>Define the vehicleid.</kbd>   
 7 - <kbd>Define the playerid.</kbd>
 
-> [!Warning]
+> [!WARNING]
 > When setting `false` to the first definition, establish the second definition as `NEON_NULL`.
 
 You can find all the definitions for `Neon` by accessing this tab > [other definitions](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/other_definitions.eng.md).
@@ -155,7 +155,7 @@ Vehicle_Xenon(true, XENON_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "You added Xenon t
 6 - <kbd>Define the vehicleid.</kbd>   
 7 - <kbd>Define the playerid.</kbd>
 
-> [!Warning]
+> [!WARNING]
 > When setting `false` for the first definition, establish the second definition as `XENON_NULL`.
 
 You can find all definitions for `Xenon` by accessing this tab > [other definitions](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/other_definitions.eng.md).
@@ -173,7 +173,7 @@ Vehicle_Tune(true, SPOILER_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "You added a Spoi
 6 - <kbd>Define the vehicleid.</kbd>   
 7 - <kbd>Define the playerid.</kbd>
 
-> [!Warning]
+> [!WARNING]
 > When setting `false` to the first definition, you are specifying that the component to be removed is the one defined by the second definition.
 
 You can find all the definitions for `Components` by accessing this tab > [components](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/components.eng.md).
@@ -226,7 +226,7 @@ On the other hand, if the callback doesn't have the `playerid` but is related to
 Vehicle_Neon(true, NEON_0, GLOBAL_VEHICLES, 0xFFFFFFFF, "Message.");
 ```
 
-> [!Warning]
+> [!WARNING]
 > There's no need to create a `loop` since the definition of `GLOBAL_VEHICLES` already handles that.
 
 -----------------------
