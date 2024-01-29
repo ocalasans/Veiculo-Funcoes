@@ -207,7 +207,7 @@ Vehicle_Interior(1, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "Your vehicle went to inter
 
 ### Related to Global
 
-When the callback is not global, you do not need to use `vehicleid` nor `playerid`. Even if you use them, everything will depend on the following definitions: `NON_GLOBAL_VEHICLES` or `GLOBAL_VEHICLES`. The first definition mentioned indicates that the callback will not be global, that is, it will refer to a player's vehicle. The second definition mentioned indicates that the callback will be global. If you use global mode in most callbacks, and the player is inside the vehicle, no changes will occur to their vehicle. For example, `Vehicle_Respawn`. If you use this callback globally, and a player is using a vehicle, that specific vehicle will not be respawned.
+When the callback is not global, there is no need to use `vehicleid` or `playerid`. If used, their relevance depends on the following definitions: `NON_GLOBAL_VEHICLES` or `GLOBAL_VEHICLES`. The first mentioned definition indicates that the callback is not global, meaning it relates to a player's vehicle or a specific vehicle. The second definition indicates that the callback is global, applying to all existing vehicles. Using the global mode in most callbacks means that if a player is inside a vehicle, no changes will occur to their vehicle, as in the example of `Vehicle_Respawn`. If you use this callback globally and a player is using a vehicle, that specific vehicle will not respawn.
 
 This include is highly recommended for SA:MP DayZ servers because it has global settings.
 
