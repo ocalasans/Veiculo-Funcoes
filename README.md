@@ -2,7 +2,7 @@
 
 Este é um include que possui diversas funções para veículos, tudo de forma fácil de usar. Recomendo que leia as categorias abaixo para ficar informado.
 
-English > [README](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/README.eng.md).
+English > [README](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/README.eng.md).
 
 -----------------------
 
@@ -68,7 +68,7 @@ Veiculo_Fechadura(true, GLOBAL_VEHICLES, 0xFFFFFFFF, "Todos os veículos foram t
 3 - <kbd>Defina a cor da mensagem.</kbd>   
 4 - <kbd>Defina a mensagem que irá aparecer para todos os players.</kbd>   
 
-Leia a categoria [Relacionado ao Global](https://github.com/Walkerxinho7/Veiculo-Funcoes#relacionado-ao-global) para entender.
+Leia a categoria [Relacionado ao Global](https://github.com/ocalasans/Veiculo-Funcoes#relacionado-ao-global) para entender.
 
 -----------------------
 
@@ -142,7 +142,7 @@ Veiculo_Neon(true, NEON_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "Você adicionou Neo
 > [!WARNING]
 > Ao definir `false` à primeira definição, estabeleça a segunda definição como `NEON_NULO`.
 
-Você poderá encontrar todas as definições para `Neon` acessando esta aba > [other definitions](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/other_definitions.md).
+Você poderá encontrar todas as definições para `Neon` acessando esta aba > [other definitions](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/other_definitions.md).
 
 -----------------------
 
@@ -160,7 +160,7 @@ Veiculo_Xenon(true, XENON_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "Você adicionou X
 > [!WARNING]
 > Ao definir `false` à primeira definição, estabeleça a segunda definição como `XENON_NULO`.
 
-Você poderá encontrar todas as definições para `Xenon` acessando esta aba > [other definitions](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/other_definitions.md).
+Você poderá encontrar todas as definições para `Xenon` acessando esta aba > [other definitions](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/other_definitions.md).
 
 -----------------------
 
@@ -178,7 +178,7 @@ Veiculo_Tunar(true, SPOILER_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "Você adicionou
 > [!WARNING]
 > Ao definir `false` à primeira definição, você está especificando que o componente a ser removido é aquele definido pela segunda definição.
 
-Você poderá encontrar todas as definições para `Componentes` acessando esta aba > [components](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/components.md).
+Você poderá encontrar todas as definições para `Componentes` acessando esta aba > [components](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/components.md).
 
 -----------------------
 
@@ -235,13 +235,13 @@ Veiculo_Neon(true, NEON_0, GLOBAL_VEHICLES, 0xFFFFFFFF, "Mensagem.");
 
 ### Todas as callbacks
 
-Você poderá encontrar todas as callbacks acessando esta aba > [callbacks](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/callbacks.md).
+Você poderá encontrar todas as callbacks acessando esta aba > [callbacks](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/callbacks.md).
 
 -----------------------
 
 ### Informações de contato
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
-YouTube: [Walkerxinho](https://www.youtube.com/@walkerxinho)   
-Discord: walkerxinho7 ou Walkerxinho7#9124   
+YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
+Discord: ocalasans   
 Comunidade: [SA:MP Programming Community©](https://abre.ai/samp-spc)
