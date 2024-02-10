@@ -66,7 +66,7 @@ Vehicle_Lock(true, GLOBAL_VEHICLES, 0xFFFFFFFF, "All vehicles have been locked."
 3 - <kbd>Define the color of the message.</kbd>   
 4 - <kbd>Define the message that will appear for all players.</kbd>   
 
-Read the category [Related to Global](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/README.eng.md#related-to-global) to understand.
+Read the category [Related to Global](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/README.eng.md#related-to-global) to understand.
 
 -----------------------
 
@@ -140,7 +140,7 @@ Vehicle_Neon(true, NEON_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "You added Neon to y
 > [!WARNING]
 > When setting `false` to the first definition, establish the second definition as `NEON_NULL`.
 
-You can find all the definitions for `Neon` by accessing this tab > [other definitions](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/other_definitions.eng.md).
+You can find all the definitions for `Neon` by accessing this tab > [other definitions](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/other_definitions.eng.md).
 
 -----------------------
 
@@ -158,7 +158,7 @@ Vehicle_Xenon(true, XENON_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "You added Xenon t
 > [!WARNING]
 > When setting `false` for the first definition, establish the second definition as `XENON_NULL`.
 
-You can find all definitions for `Xenon` by accessing this tab > [other definitions](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/other_definitions.eng.md).
+You can find all definitions for `Xenon` by accessing this tab > [other definitions](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/other_definitions.eng.md).
 
 -----------------------
 
@@ -176,7 +176,7 @@ Vehicle_Tune(true, SPOILER_0, NON_GLOBAL_VEHICLES, 0xFFFFFFFF, "You added a Spoi
 > [!WARNING]
 > When setting `false` to the first definition, you are specifying that the component to be removed is the one defined by the second definition.
 
-You can find all the definitions for `Components` by accessing this tab > [components](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/components.eng.md).
+You can find all the definitions for `Components` by accessing this tab > [components](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/components.eng.md).
 
 -----------------------
 
@@ -233,13 +233,13 @@ Vehicle_Neon(true, NEON_0, GLOBAL_VEHICLES, 0xFFFFFFFF, "Message.");
 
 ### All the callbacks
 
-You can find all the callbacks by accessing this tab > [callbacks](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/callbacks.eng.md).
+You can find all the callbacks by accessing this tab > [callbacks](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/callbacks.eng.md).
 
 -----------------------
 
 ### Contact Information
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
-YouTube: [Walkerxinho](https://www.youtube.com/@walkerxinho)   
-Discord: walkerxinho7 ou Walkerxinho7#9124   
+YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
+Discord: ocalasans   
 Community: [SA:MP Programming Community©](https://abre.ai/samp-spc)
