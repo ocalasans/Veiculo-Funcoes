@@ -2,7 +2,7 @@
 
 Aqui você encontra todas as definições dos componentes, além de identificá-los.
 
-English > [components](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/components.eng.md).
+English > [components](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/components.eng.md).
 
 -----------------------
 
