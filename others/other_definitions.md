@@ -2,7 +2,7 @@
 
 Aqui você encontrará todas as outras definições.
 
-English > [other definitions](https://github.com/Walkerxinho7/Veiculo-Funcoes/blob/main/others/other_definitions.eng.md).
+English > [other definitions](https://github.com/ocalasans/Veiculo-Funcoes/blob/main/others/other_definitions.eng.md).
 
 -----------------------
 
