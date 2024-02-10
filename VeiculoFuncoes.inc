@@ -2,12 +2,12 @@
     * VeiculoFuncoes v1.0.3
 
     Este include é parte integrante do projeto VeiculoFuncoes, uma biblioteca que oferece
-    funcionalidades relacionadas a veículos. Desenvolvido por [Calasans (Walkerxinho7)]. 
+    funcionalidades relacionadas a veículos. Desenvolvido por [Calasans]. 
 
-    © [2024] [Calasans (Walkerxinho7)]. Todos os direitos reservados.
+    © [2024] [Calasans]. Todos os direitos reservados.
 
-    Discord: walkerxinho7 ou Walkerxinho7#9124
-    Youtube: Walkerxinho
+    Discord: ocalasans
+    Youtube: Calasans
     Instagram: ocalasans
 
     SA:MP Programming Comunnity©: https://abre.ai/samp-spc
@@ -943,7 +943,7 @@ public OnGameModeInit()
     print("||                                                              ||");
     print("||                                                              ||");
     print("||                      V-F versao 1.0.3                        ||");
-    print("||                 By: Calasans (Walkerxinho7)                  ||");
+    print("||                       By: Calasans                           ||");
     print("||                  Discord: abre.ai/samp-spc                   ||");
     print("||                                                              ||");
     print("||==============================================================||");
